@@ -23,6 +23,13 @@ else if (bodyMass >= 18.5  && bodyMass <=  24.9  ){
 
 }
 
+else  if (bodyMass >= 25  && bodyMass <= 29.9 )   {
+    document.getElementById('display').style.color= "blue";
+
+
+    results.innerHTML = `Your body mass is  ${bodyMass.toFixed(2)}  (overweight)`
+}
+
 
 
     
