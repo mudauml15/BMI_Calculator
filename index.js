@@ -6,6 +6,17 @@ let bodyMass = weight / height/height*(10000);
 
 let results = document.getElementById('display');
 
+
+if (bodyMass < 18.5) {
+    document.getElementById('display').style.color= "orange";
+    results.innerHTML = `Your body mass is ${bodyMass.toFixed(2)} (underweight)`
+    
+
+    
 }
+
+}
+
+
 
     
