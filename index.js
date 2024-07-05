@@ -15,6 +15,12 @@ if (bodyMass < 18.5) {
     
 }
 
+else if (bodyMass >= 18.5  && bodyMass <=  24.9  ){
+    document.getElementById('display').style.color= "purple";
+
+    results.innerHTML = `Your body mass is    ${bodyMass.toFixed(2)}   (Normal)`
+
+
 }
 
 
