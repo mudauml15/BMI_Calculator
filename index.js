@@ -31,5 +31,14 @@ else  if (bodyMass >= 25  && bodyMass <= 29.9 )   {
 }
 
 
+else 
+{ 
+    document.getElementById('display').style.color= "red";
+
+    results.innerHTML = `Your body mass is  ${ bodyMass.toFixed(2)}  ( you are obess)`
+}
+}
+
+
 
     
