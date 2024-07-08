@@ -39,6 +39,14 @@ else
 }
 }
 
+function resetCalculation (){
+        
+    document.getElementById('height').value= ' ';
+    document.getElementById('weight').value = ' ';
+    document.getElementById('display').innerHTML =' ';
+    };
+   
+
 
 
     
