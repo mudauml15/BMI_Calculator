@@ -6,52 +6,48 @@ let bodyMass = weight / height/height*(10000);
 
 let results = document.getElementById('display');
 
+if ( height == isNaN || weight == isNaN  ||  weight ==" "  || height == " " ) {
+        document.getElementById('display').style.color= "black";
+    results.innerHTML = `enter valid inputs `
+  
+  }
+    
 
-if (bodyMass < 18.5  &&  height != isNaN  && weight != isNaN ) {
+
+else if (bodyMass < 18.5   ) {
     document.getElementById('display').style.color= "orange";
-    results.innerHTML = `Your body mass is ${bodyMass.toFixed(1)} kg (underweight)`
+    results.innerHTML = `Your body mass is ${bodyMass.toFixed(1)}  (underweight)`
   
 }
  
   
 
-else if (bodyMass >= 18.5  && bodyMass <=  24.9 && height != isNaN  && weight != isNaN ){
+else if (bodyMass >= 18.5  && bodyMass <=  24.9 ){
     document.getElementById('display').style.color= "purple";
 
-    results.innerHTML = `Your body mass is    ${bodyMass.toFixed(1)} kg  (Normal)`
+    results.innerHTML = `Your body mass is    ${bodyMass.toFixed(1)}   (Normal)`
 } 
 
 
-    else if(bodyMass >= 18.5  && bodyMass <=  24.9 && height != isNaN  && weight != isNaN ){
-    document.getElementById('display').style.color= "purple";
-
-    results.innerHTML = `Your body mass is    ${bodyMass.toFixed(1)} kg  (Normal)`
-} 
+    
 
 
-else  if (bodyMass >= 25  && bodyMass <= 29.9 && height != isNaN  && weight != isNaN )   {
+else  if (bodyMass >= 25  && bodyMass <= 29.9  )   {
     document.getElementById('display').style.color= "blue";
 
 
-    results.innerHTML = `Your body mass is  ${bodyMass.toFixed(1)} kg (overweight)`
+    results.innerHTML = `Your body mass is  ${bodyMass.toFixed(1)}  (overweight)`
 }
 
 
 
 
 
-else if( bodyMass >= 30 && height != isNaN  && weight != isNaN )  
-{ 
+else 
+{  
     document.getElementById('display').style.color= "red";
 
     results.innerHTML = `Your body mass is  ${ bodyMass.toFixed(1)} kg ( obess)`
-}
-
-else {
-
-    document.getElementById('display').style.color= "black";
-
-    results.innerHTML = `enter valid inputs `
 }
 };
 
