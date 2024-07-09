@@ -47,7 +47,7 @@ else
 {  
     document.getElementById('display').style.color= "red";
 
-    results.innerHTML = `Your body mass is  ${ bodyMass.toFixed(1)} kg ( obess)`
+    results.innerHTML = `Your body mass is  ${ bodyMass.toFixed(1)}  ( obess)`
 }
 };
 
