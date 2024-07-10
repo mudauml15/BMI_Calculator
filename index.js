@@ -6,12 +6,28 @@ let bodyMass = weight / height/height*(10000);
 
 let results = document.getElementById('display');
 
-if ( height == isNaN || weight == isNaN  ||  weight ==" "  || height == " " ) {
-        document.getElementById('display').style.color= "black";
-    results.innerHTML = `enter valid inputs `
-  
-  }
-    
+
+
+   if( height == " "  &&  weight == " " ) {
+    document.getElementById('display').style.color= "black";
+    results.innerHTML = `Enter valid height and weight`
+ 
+ }
+
+ else if( weight == " "  ) {
+    document.getElementById('display').style.color= "black";
+    results.innerHTML = `Enter valid weight`
+ 
+ }
+
+ else if( height == " "  ) {
+    document.getElementById('display').style.color= "black";
+    results.innerHTML = `Enter valid height`
+ 
+ }
+
+ 
+
 
 
 else if (bodyMass < 18.5   ) {
